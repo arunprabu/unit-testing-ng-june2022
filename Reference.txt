@@ -20,9 +20,9 @@ Calc
 
     Dev Prepare Test Cases (Requirements)
     ----
-      1. Inputs should be numbers [BUG]
+      1. Inputs should be numbers 
       2. Output should also be a number 
-      3. If wrong inputs entered, add button should be disabled 
+      3. If wrong inputs entered, add button should be disabled [TODO]
 
     
 Modern Software Dev Methodology as of 2022  / Testing Approach 
@@ -33,6 +33,7 @@ Modern Software Dev Methodology as of 2022  / Testing Approach
       devs write test cases => (Instant feedback of failure) => devs write functionality => (Instant feedback of success)  => [CODE COMPLETE]
       
       Testing Pattern: AAA (Arrange, Act, Assert)
+      Tools: JEST, Mocha and Chai 
 
   2. Behaviour Driven Development (BDD)  
       * is an agile s/w dev methodology 
@@ -41,6 +42,7 @@ Modern Software Dev Methodology as of 2022  / Testing Approach
 
       devs write test cases => (Instant feedback of failure) => devs write functionality => (Instant feedback of success)  => [CODE COMPLETE]
       Testing Pattern: Given, When, Then 
+      Tools: JasmineJS 
 
   Dev's write test cases => Dev's write the functionality => (Tools) => [Instant Feedback of Success] => Deployment
 
@@ -56,7 +58,7 @@ Automated Testing
       * Individual units of the component would be tested 
       * Bug Reduction Density: 40 - 80%
 
-      Tools: Jasmine JS & Karma 
+      Tools: Jasmine JS(Framework) & Karma (Test Runner)
 
   2. Integration Testing 
       * Different units, modules or components tested as combined entity
@@ -80,6 +82,64 @@ Automated Testing
 // How to write the test cases ?
 // Where to write test cases? 
 // How to test our app against the test cased we wrote? 
+
+
+
+Angular Building Blocks
+--
+  Components 
+  Directives 
+  Services
+  Pipes 
+ 
+===
+NPM Dependencies 
+--
+  1. Project Dependencies
+      * for the app to work in prod environment 
+      * will be tracked under 'dependencies' in package.json 
+      * will be part of the prod build 
+      npm i dropzone 
+
+      examples: bootstrap, @angular/core, react, jquery, dropzone, datatables 
+
+  2. Dev Dependencies
+      * needed during the time of development 
+      * will be tracked under 'devDependencies' in package.json 
+      * will never be part of the prod build 
+        npm i webpack --save-dev 
+
+      examples: webpack, typescript, jasmine, karma, jest, flowjs,  protractor 
+
+  3. Global Dependencies
+      * installed system-wide 
+      npm i @angular/cli -g 
+
+---
+
+Components 
+  variables 
+  methods
+  html 
+  css 
+    inline 
+    class [TODO]
+  events 
+  Contact Form - ReactiveForms  [DONE]
+    submit method 
+    form is valid 
+    form is invalid 
+  
+
+Agenda
+---
+
+Todo Comp with REST API call thru service 
+  Mocking service call 
+Services 
+
+Pipes
+
 
 
 
